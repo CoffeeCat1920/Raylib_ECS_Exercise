@@ -18,4 +18,10 @@ public:
     Entity(size_t id, const std::string& tag)
         : m_Id(id), m_tag(tag) {}
 
+    void Destroy() { m_alive = false; }
+
+    size_t Id() { return m_Id; }
+    std::string Tag() { return m_tag; }
+    bool Alive() { return m_alive; }
+
 };
