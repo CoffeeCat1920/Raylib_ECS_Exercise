@@ -1,23 +1,29 @@
 #include "raylib/raylib.h"
+#include "core/settings.hpp"
 #include "core/colors.hpp"
 
-#include "game/game.hpp"
+#include "entity/entity.hpp"
+#include "systems/system.hpp"
+
+#include <vector>
 
 int main () {
+
+  std::vector<Entity> entities;
   
-  InitWindow( 64*5 , 64*5, "Animation Test");
-  Game game;
+  InitWindow( RENDERING_WIDTH, RENDERING_HEIGHT, "Animation Test");
+  
+  SetTargetFPS(60);
 
   while ( !WindowShouldClose() )
   { 
-
-    game.Update();
 
     BeginDrawing();
 
     ClearBackground(GRUVBOX_DARK0);
 
-    game.Draw();
+    sMovement(entities);
+    sRender(entities);
 
     EndDrawing();
     

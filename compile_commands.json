@@ -12,9 +12,26 @@
       "bin/src/game/game.o",
       "src/game/game.cpp"
     ],
-    "directory": "/home/ok/Code/raylib-templeat",
-    "file": "/home/ok/Code/raylib-templeat/src/game/game.cpp",
-    "output": "/home/ok/Code/raylib-templeat/bin/src/game/game.o"
+    "directory": "/home/ok/Code/Raylib_ECS_Exercise",
+    "file": "/home/ok/Code/Raylib_ECS_Exercise/src/game/game.cpp",
+    "output": "/home/ok/Code/Raylib_ECS_Exercise/bin/src/game/game.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-Iinclude",
+      "-Isrc",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-c",
+      "-o",
+      "bin/src/entityManager/EntityManager.o",
+      "src/entityManager/EntityManager.cpp"
+    ],
+    "directory": "/home/ok/Code/Raylib_ECS_Exercise",
+    "file": "/home/ok/Code/Raylib_ECS_Exercise/src/entityManager/EntityManager.cpp",
+    "output": "/home/ok/Code/Raylib_ECS_Exercise/bin/src/entityManager/EntityManager.o"
   },
   {
     "arguments": [
@@ -29,8 +46,8 @@
       "bin/main.o",
       "main.cpp"
     ],
-    "directory": "/home/ok/Code/raylib-templeat",
-    "file": "/home/ok/Code/raylib-templeat/main.cpp",
-    "output": "/home/ok/Code/raylib-templeat/bin/main.o"
+    "directory": "/home/ok/Code/Raylib_ECS_Exercise",
+    "file": "/home/ok/Code/Raylib_ECS_Exercise/main.cpp",
+    "output": "/home/ok/Code/Raylib_ECS_Exercise/bin/main.o"
   }
 ]
